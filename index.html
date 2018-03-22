@@ -1,5 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -151,27 +192,47 @@
         <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">
       </div>
     </section>
-	<section class="section-intro bg-faded text-xs-center">
+<!--text over========================================	<section class="section-intro bg-faded text-xs-center">
       <div class="container">
         <h3 class="wp wp-1">web</h3>
         <p class="lead wp wp-2">aaa.</p>
-        <img src="img/Character3D.png" alt="iPad mock" class="img-fluid wp wp-3">
+        </img>
       </div>
     </section>
+	
+===============================================-->
+<!--text over======================================== 
+	<section>
+	<h2>Image Text</h2>
 
+<div class="container">
+  <img src="img/bg-header.jpg" alt="Norway" style="width:100%;">
+  <div class="bottom-left">Bottom Left</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>
+  <div class="centered">Centered</div>
+</div>
+	</section>
+==============================================image-->
     <!-- Features
     ================================================== -->
 
     <section class="section-features text-xs-center">
+	
       <div class="container">
         <div class="row">
+		
           <div class="col-md-4">
             <div class="card">
               <div class="card-block">
+			  
+			  
                 <span class="icon-pen display-1"></span>
                 <h4 class="card-title">250</h4>
                 <h6 class="card-subtitle text-muted">UI Elements</h6>
                 <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
+				<img src="img/Character3D.png" alt="iPad mock" class="img-fluid wp wp-1">
               </div>
             </div>
           </div>
@@ -200,7 +261,7 @@
     </section>
 
     <!-- Video
-    ================================================== -->
+    ================================================== 
 
     <section class="section-video bg-inverse text-xs-center wp wp-4">
       <h3 class="sr-only">Video</h3>
@@ -209,9 +270,11 @@
         <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
       </video>
     </section>
+=====================================================-->
+
 
     <!-- Pricing
-    ================================================== -->
+    ================================================== 
 
     <section class="section-pricing bg-faded text-xs-center">
       <div class="container">
@@ -284,9 +347,66 @@
         </div>
       </div>
     </section>
-
+======================================================-->
     <!-- Testimonials
-    ================================================== -->
+    ================================================== 
+
+    <section class="section-testimonials text-xs-center bg-inverse">
+      <div class="container">
+        <h3 class="sr-only">Testimonials</h3>
+        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="0">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <blockquote class="blockquote">
+                <img src="img/face1.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+                <p class="h3">Good design at the front-end suggests that everything is in order at the back-end, whether or not that is the case.</p>
+                <footer>Dmitry Fadeyev</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <img src="img/face2.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+                <p class="h3">It’s not about knowing all the gimmicks and photo tricks. If you haven’t got the eye, no program will give it to you.</p>
+                <footer>David Carson</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <img src="img/face3.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+                <p class="h3">There’s a point when you’re done simplifying. Otherwise, things get really complicated.</p>
+                <footer>Frank Chimero</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <img src="img/face4.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+                <p class="h3">Designing for clients that don’t appreciate the value of design is like buying new tires for a rental car.</p>
+                <footer>Joel Fisher</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <img src="img/face5.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+                <p class="h3">Every picture owes more to other pictures painted before than it owes to nature.</p>
+                <footer>E.H. Gombrich</footer>
+              </blockquote>
+            </div>
+          </div>
+          <ol class="carousel-indicators">
+            <li class="active"><img src="img/face1.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="0" class="img-fluid img-circle"></li>
+            <li><img src="img/face2.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="1" class="img-fluid img-circle"></li>
+            <li><img src="img/face3.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="2" class="img-fluid img-circle"></li>
+            <li><img src="img/face4.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="3" class="img-fluid img-circle"></li>
+            <li><img src="img/face5.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="4" class="img-fluid img-circle"></li>
+          </ol>
+        </div>
+      </div>
+    </section> 
+	=================================================-->
+	
+	
+	<!-- Testimonials 2
+    ================================================== 
 
     <section class="section-testimonials text-xs-center bg-inverse">
       <div class="container">
@@ -339,7 +459,7 @@
         </div>
       </div>
     </section>
-
+===================================================-->
     <!-- Text Content
     ================================================== -->
 
@@ -405,7 +525,7 @@
     </section>
 
     <!-- Sign Up
-    ================================================== -->
+    ==================================================
 
     <section class="section-signup bg-faded">
       <div class="container">
@@ -443,7 +563,7 @@
         </form>
       </div>
     </section>
-
+=====================================================-->
     <!-- Footer
     ================================================== -->
 
