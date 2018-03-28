@@ -1,0 +1,398 @@
+
+ html, body {
+     width: 100%;
+     height: 100%;
+	
+  } 
+
+
+
+/*coin2  v >>>> */
+.mover2 {
+  width: 50px;
+  height: 50px;
+  background:#9f5400;
+  border-radius: 20%;
+  animation: move 2s infinite;
+}
+
+/*coin  ^ >>>> *//*coin  v >>>> */
+.mover {
+  width: 50px;
+  height: 50px;
+  background: #ffcb15;
+  border-radius: 50%;
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  
+  0% {
+    opacity: 0;
+  transform: translate(200px, 0);}
+  10% {
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+    
+  } 90%{
+    opacity: 1;
+    
+  }
+  100%{
+    opacity: 0;
+    transform: translate(0px, 0);
+  }
+ 
+}
+
+.area {
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  border: 2px solid #f06d06;
+  border-radius: 50px;
+}
+body {
+  padding: 20px;
+}
+/*coin  ^ >>>> */
+
+/*my animation>>>> */
+
+#diver6 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: ;
+	text-align:center;
+    animation-name: example2;
+    animation-duration: 50s;
+    animation-delay: 30s;	
+	animation-iteration-count: infinite;
+}	/*my animation>>>> */
+#diver5 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color:;
+	opacity:0%;
+	text-align:left;
+	top:-10%;
+    animation-name: example3;
+    animation-duration: 40s;
+    animation-delay: 1s;	
+	animation-iteration-count: infinite;
+}	/*my animation>>>> */
+#diver4 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: ;
+	text-align:center;
+    animation-name: example2;
+    animation-duration: 50s;
+    animation-delay: 30s;	
+	animation-iteration-count: infinite;
+}	/*my animation>>>> */
+
+#diver3 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: ;
+	text-align:center;
+    animation-name: example2;
+    animation-duration: 50s;
+    animation-delay: 22s;	
+	animation-iteration-count: infinite;
+}	
+	
+/*<<<<*finished*//*my animation>>>> */
+	 @keyframes example2 {
+    0%   { opacity:0; left:100%; top:100px; letter-spacing: 0; transform:rotate(40deg); }
+    5% { opacity:100; left:0%; top:100px; letter-spacing:0; transform:rotate(-10deg); }
+	14% { opacity:100; left:0%; top:100px; letter-spacing:0; transform:rotate(10deg); }
+20% { opacity:100; left:-100%; top:100px; letter-spacing:0; transform:rotate(-30deg); }
+100% { opacity:10; left:-100%; top:100px; letter-spacing:0; transform:rotate(-30deg); }}
+ @keyframes example3 {
+    0%   { opacity:0; left:0%; top:95%; letter-spacing: 3;  }
+5% { opacity:10; left:0%; top:90%; letter-spacing:0; }
+20% { opacity:0; left:0%; top:90%; letter-spacing:3; }
+100% { opacity:0; left:0%; top:90%; letter-spacing:3; }}
+
+#diver2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: ;
+	text-align:center;
+    animation-name: example2;
+    animation-duration: 50s;
+    animation-delay: 15s;	
+	animation-iteration-count: infinite;
+}	
+	
+/*<<<<*finished*/
+	 
+
+/*my animation>>>> */
+	 @keyframes example {
+    0%   { opacity:0; left:100%; top:100px; letter-spacing: 0; transform:rotate(40deg); }
+    30% { opacity:100; left:0%; top:100px; letter-spacing:0; transform:rotate(-10deg); }
+	70% { opacity:100; left:0%; top:100px; letter-spacing:0; transform:rotate(10deg); }
+100% { opacity:10; left:-100%; top:100px; letter-spacing:0; transform:rotate(-30deg); }}
+#diver1 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: ;
+	text-align:center;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-delay: 9s;	
+	animation-iteration-count: 1;
+}	
+	 
+
+/*<<<<*finished*/
+
+
+
+
+ 
+@keyframes color-animation {
+    0% {
+       background: #ffffff;
+    }
+    25% {
+       background: #5353ff;
+    } 
+    50% {
+       background: #408080;
+    } 
+	75% {
+       background: #5353ff;
+    } 
+	90%{
+		background: #420053;
+	}
+ }
+
+
+.block {position: fixed;
+    overflow: hidden;
+	width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+   
+   animation: color-animation 40s infinite linear alternate;
+}
+.world {
+	
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.header {
+	position: fixed;
+	
+	top: -8px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+}.header2 {
+	position: fixed;
+	
+	top: 800px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+}
+
+
+
+.score {
+	width: 100%;
+	margin: 2em 0 0;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.score__content {
+	position: relative;
+	display: inline-block;
+	padding: 0 1em;
+	vertical-align: top;
+}
+
+.score__content:nth-child(2) {
+	border-right: 0px solid #ffffff;
+	border-left: 0px solid ##1f76fa;
+}
+
+.score__label {	
+    font-size: 15px;
+	position: relative;
+	margin: 0 0 0.5em 0;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #75a0d5;
+	text-shadow: 0.075em 0.08em 0.1em #162d47;
+	
+}
+
+.name__label {
+    font-family: 'font2';	
+    font-size: 80px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	color: #75a0d5;
+	text-shadow: 0.075em 0.08em 0.1em #162d47;
+	opacity:100%;
+	}
+.name__label2 {	
+font-family: 'font2';
+    font-size: 10px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	color: #75a0d5;
+	
+	text-shadow: 0.075em 0.08em 0.1em #162d47;
+	
+	}
+
+.name__label3 {  font-family: 'font2';	
+    font-size: 20px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	color: #75a0d5;
+	text-shadow: 0.075em 0.08em 0.1em #162d47;
+	opacity:0%;}
+.name__label4 {  font-family: 'font3';	
+    font-size: 10px;
+	position: relative;
+	text-align: left;
+	text-transform: uppercase;
+	color: #75a0d5;
+	text-shadow: 0.075em 0.08em 0.1em #162d47;
+	opacity:0%;}
+   
+
+
+.score__value {
+	
+	font-weight: bold;
+	color: #75a0d5;
+}
+
+.score__value--level {
+	font-size: 25px;
+}
+
+.score__value--dist {
+	font-family: 'font2';
+	font-size: 40px;
+text-shadow: 0.075em 0.08em 0.1em #162d47;}
+
+.level-circle {
+	position: absolute;
+	left: 50%;
+	width: 46px;
+	margin: -37px 0 0 -23px;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.score__value--energy {
+	position: relative;
+	width: 100%;
+	height: 25px;
+	margin-top: 20px;
+	border-radius: 3px;
+	background-color: #75a0d5;
+}
+
+.energy-bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 2px;
+	background-color: #ffffff;
+	-webkit-animation-name: none;
+	animation-name: none;
+	-webkit-animation-duration: 150ms;
+	animation-duration: 150ms;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.message {
+	font-weight: bold;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	pointer-events: none;
+}
+
+.message--replay {
+	font-family: 'font2';
+	font-size: 3.25vw;
+	bottom: 40vh;
+	display: none;
+	text-indent: 0.5em;
+	letter-spacing: 0.em;
+	color: #75a0d5;
+	text-shadow: 0.075em 0.08em 0.1em #162d47;
+}
+
+.message--instructions {
+	font-family: 'font3';
+	font-size: 1.5em;
+	bottom: 8vh;
+	letter-spacing: 0.2em;
+	color: #68c3c0;
+}
+
+.message--instructions span {
+	display: block;
+	color: #d6483b;
+	white-space: nowrap;
+}
+@-webkit-keyframes blinking {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes blinking {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@media screen and (max-width: 40em) {
+	.header {
+		font-size: 0.75em;
+		top: 6.5em;
+	}
+	.header h2 {
+		letter-spacing: 0.65em;
+	}
+}
